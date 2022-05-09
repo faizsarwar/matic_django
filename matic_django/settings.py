@@ -204,6 +204,6 @@ django_heroku.settings(locals())
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': "brandnetwork360",
-    'API_KEY': '266613242951674',
-    'API_SECRET': 'EacYNDN_wpKrKKlOgbJZHVCSIzI'
+    'API_KEY': os.environ.get("CLOUDINARY_API_KEY"),
+    'API_SECRET': os.environ.get("CLOUDINARY_API_SECRET")
 }
