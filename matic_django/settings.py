@@ -157,12 +157,12 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-JET_DEFAULT_THEME = 'light-green'
+JET_DEFAULT_THEME = '#5EADDE'
 
 JET_THEMES = [
     {
         'theme': 'default', # theme folder name
-        'color': '#47bac1', # color of the theme's button in user menu
+        'color': '#5EADDE', # color of the theme's button in user menu
         'title': 'Default' # theme title
     },
     {
