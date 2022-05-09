@@ -30,6 +30,7 @@ class Testemonial(models.Model):
 class Blog(models.Model):
     tittle= models.CharField(max_length=255)
     slug= models.SlugField()
+    card_text=models.TextField(blank=True,null=True)
     description=models.TextField(blank=True,null=True)
     image=models.ImageField(upload_to='uploads/',blank=True,null=True)
     thumbnail=models.ImageField(upload_to='uploads/',blank=True,null=True)
