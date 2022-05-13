@@ -77,9 +77,19 @@ class Course(models.Model):
     tittle= models.CharField(max_length=255)
     slug= models.SlugField()
     description=models.TextField(blank=True,null=True)
+    price_per_month=models.IntegerField(null=True)
+    classes_per_month=models.IntegerField(null=True)
+    total_duration_in_minutes=models.IntegerField(null=True)
+    durantion_in_months = models.CharField(max_length=255)
+    learning_targets=models.TextField(blank=True,null=True)
+    pre_requisites=models.TextField(blank=True,null=True)
+    homework=models.TextField(blank=True,null=True)
+    scheduling=models.TextField(blank=True,null=True)
+    description_2=models.TextField(blank=True,null=True)
     image=models.ImageField(upload_to='uploads/',blank=True,null=True)
     thumbnail=models.ImageField(upload_to='uploads/',blank=True,null=True)
     date_added=models.DateTimeField(auto_now_add=True)
+
 
     class Meta:
         ordering=("-date_added",)

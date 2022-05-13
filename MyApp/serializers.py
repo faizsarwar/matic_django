@@ -16,14 +16,7 @@ class BlogSerializer(serializers.ModelSerializer):
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model=Course
-        fields=(
-            "id",
-            "tittle",
-            "get_absolute_url",
-            "description",
-            "get_image",
-            "get_thumbnail",
-        )
+        fields = '__all__'
 
 
 class FaqSerializer(serializers.ModelSerializer):

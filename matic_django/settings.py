@@ -29,7 +29,16 @@ SECRET_KEY = 'django-insecure-7815d1%r(a30%0r-v#y+-df^-*8srx*gxma#xg9r+!-11g$&5z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+
+CORS_ALLOWED_ORIGINS=[ 
+    "http://localhost:8080", #fronetend
+    # "3cf2-110-93-226-143.ngrok.io"
+    "http://6341-110-93-227-37.ngrok.io",
+    "https://anasazi-vue.herokuapp.com",
+    "https://anasazi-vue.vercel.app",
+    "https://questgreens.com"
+]
 
 
 # Application definition
