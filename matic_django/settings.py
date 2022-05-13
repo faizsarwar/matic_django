@@ -36,7 +36,7 @@ CORS_ALLOWED_ORIGINS=[
     # "3cf2-110-93-226-143.ngrok.io"
     "http://6341-110-93-227-37.ngrok.io",
     "https://anasazi-vue.herokuapp.com",
-    "https://anasazi-vue.vercel.app",
+    "https://matic-academy.vercel.app",
     "https://questgreens.com"
 ]
 
